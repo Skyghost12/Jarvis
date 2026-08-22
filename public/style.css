@@ -1,0 +1,70 @@
+body {
+  background: #0d0f14;
+  color: #e6e6e6;
+  font-family: -apple-system, "Segoe UI", sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 40px 16px;
+}
+
+#app {
+  width: 100%;
+  max-width: 560px;
+}
+
+h1 {
+  color: #4ea1ff;
+  letter-spacing: 1px;
+}
+
+#chat-log {
+  height: 400px;
+  overflow-y: auto;
+  border: 1px solid #262b36;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: #12151c;
+}
+
+.msg {
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.msg.user { color: #9ecbff; }
+.msg.assistant { color: #e6e6e6; }
+
+#chat-form {
+  display: flex;
+  gap: 8px;
+}
+
+#chat-input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #262b36;
+  background: #12151c;
+  color: #e6e6e6;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  background: #4ea1ff;
+  color: #0d0f14;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#mic-btn {
+  background: #262b36;
+  color: #e6e6e6;
+}
+
+#mic-btn.listening {
+  background: #ff4e4e;
+  color: white;
+}   
